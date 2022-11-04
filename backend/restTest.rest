@@ -1,0 +1,81 @@
+GET http://localhost:3005/keikat
+Content-Type: "application/json"
+
+###
+
+GET http://localhost:3005/tuotteet
+Content-Type: application/json
+
+###
+GET http://localhost:3005/tuotteet/tuotteetReact
+Content-Type: application/json
+
+###
+GET http://localhost:3005/tuotteet/Evita LP
+Content-Type: application/json
+
+###
+
+POST http://localhost:3005/keikat/lisaa
+Content-Type: application/json
+
+{
+    "paikka":"Helsinki",
+    "pvm": "02.09.2022",
+    "linkki":"https://goo.gl/maps/mJUUkeVgpMUneXAX9"
+}
+
+###
+POST http://localhost:3005/tuotteet
+Content-Type: application/json
+
+{
+    "paikka":"Helsinki"
+}
+
+###
+
+POST http://localhost:3005/tuotteet
+Content-Type: application/json
+
+{
+    "tuote": "T-Paita",
+    "hinta":30.00,
+    "tyyppi": "XL",
+    "kuva":"http://localhost:3005/evitaKuva",
+    "lukumaara":10,
+    "kuvaus":"Evitan ensimmäinen aivan törkeen magee t-paita"
+}
+
+###
+POST http://localhost:3005/tuotteet
+Content-Type: application/json
+
+{
+    "tuote": "Evita LP",
+    "hinta":25.00,
+    "tyyppi": "LP",
+    "kuva":"http://localhost:3005/evitaKuva",
+    "lukumaara":10,
+    "kuvaus":"Evitan aivan törkeen upee EP"
+}
+###
+POST http://localhost:3005/tuotteet
+Content-Type: application/json
+
+{
+    "tuote": "Evita LP",
+    "hinta":15.00,
+    "tyyppi": "CD",
+    "kuva":"http://localhost:3005/evitaKuva",
+    "lukumaara":5,
+    "kuvaus": "Evitan aivan törkeen upee EP"
+}
+
+###
+
+DELETE http://localhost:3005/keikat
+
+###
+
+DELETE http://localhost:3005/tuotteet
